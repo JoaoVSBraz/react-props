@@ -2,16 +2,17 @@ import React from "react"
 
 function Card(props) {
     return (
-        <div>
-            <div>
-                <h2>{props.name}</h2>
+        <div className="card">
+            <div className="top">
+                <h2 className="name">{props.name}</h2>
                 <img
+                    className="circle-img"
                     src={props.imgURL}
                     alt='default'
                 />
             </div>
-            <div>
-                <p>{props.description}</p>
+            <div className="bottom">
+                <p className="info">{props.description}</p>
             </div>
             
         </div>
