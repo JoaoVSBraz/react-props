@@ -1,6 +1,6 @@
-import React from "react";
-import contacts from "../contacts";
-import Card from "./Card";
+import React from "react"
+import contacts from "../contacts"
+import Card from "./Card"
 
 function App() {
     return (
