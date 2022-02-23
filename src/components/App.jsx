@@ -1,23 +1,23 @@
 import React from "react"
 import contacts from "../contacts"
 import Card from "./Card"
+import Avatar from "./Avatar"
 
 function App() {
     return (
         <div>
             <h1 className="heading">My Contacts</h1>
-            <Card 
-            name={contacts[0].name} 
-            imgURL={contacts[0].imgURL} 
-            description={contacts[0].description}/>
-            <Card 
-            name={contacts[1].name} 
-            imgURL={contacts[1].imgURL}
-            description={contacts[1].description}/>
-            <Card 
-            name={contacts[2].name} 
-            imgURL={contacts[2].imgURL} 
-            description={contacts[2].description}/>
+            <Avatar imgURL="https://avatars.githubusercontent.com/u/32749482?v=4" />
+            {contacts.map((document) => {
+                return (
+                    <Card
+                        id={document.id}
+                        key={document.id}
+                        name={document.name} 
+                        imgURL={document.imgURL} 
+                        description={document.description}/>
+                )
+            })}
         </div>
     )
 }
