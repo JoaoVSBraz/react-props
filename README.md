@@ -1,10 +1,16 @@
 # React Props
 
-A study repository of React properties.
+## HTML Properties
 
-## Properties
+There are two ways to adding attributes to html elements using React. The first way is adding default html properties using some of React attributes. For example, if you want to add a class name into an html element you can use the React attribute **className** to define a CSS class to that particular element.
 
-The properties of components in React it looks like the atributes of html elements. One of the big difference is that in React we can name these attributes, which are known as properties, with any name.
+```js
+<p className='info'>Some text</p>
+```
+
+## React Properties
+
+The properties of components in React it looks like the atributes of html elements. One of the big difference is that in React we can name these attributes, which are known as properties, with any name we want.
 
 Here we have the creation structure of a React component. Commonly these components are files terminating with **.jsx** extension and placed inside a **components** folder.
 ```js
@@ -18,12 +24,12 @@ function Card() {
 }
 ```
 
-Right below, we have the card component call which must be inserted on the index.js file.
+Right below, we have the card component call which will be rendered later on.
 ```js
 <Card />
 ```
 
-The first argument of the component's function it is the component's properties which is an object. So, now we can define a property for the card component.
+The first thing that we need to know is that every component in React are functions which it returns html. And the first argument of the component's function it is the component's properties which is an object. So, now we can define a property for the card component.
 
 ```js
 <Card name='John Doe' />
